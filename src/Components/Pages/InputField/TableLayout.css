@@ -1,0 +1,33 @@
+/* Table styling */
+/* .table {
+  border: 1px solid #ddd; 
+  border-collapse: collapse; 
+} */
+
+/* Table cell styling */
+.dataTable_cell {
+  white-space: nowrap; 
+  overflow: hidden;    
+  text-overflow: ellipsis; 
+  max-width: 200px;    
+  border: 1px solid #ddd; 
+  padding: 8px;
+}
+
+/* Table header styling */
+.dataTable_headerCell {
+  white-space: nowrap;  /* Prevent text wrapping */
+  overflow: hidden;     /* Hide overflowing content */
+  text-overflow: ellipsis; /* Add ellipsis for truncated text */
+  max-width: 200px;     /* Set a maximum width for the header cells */
+  border: 1px solid #ddd; /* Border around each header cell */
+  background-color: #f8f9fa; /* Light gray background */
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Add border to the table rows */
+.dataTable_row {
+  border-bottom: 1px solid #ddd; /* Horizontal lines between rows */
+}
+

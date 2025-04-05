@@ -1,0 +1,6 @@
+.worker-inprogress-order-container {
+    padding-top: 80px; /* Adjust based on navbar height */
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }

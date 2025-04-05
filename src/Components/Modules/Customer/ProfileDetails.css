@@ -1,0 +1,79 @@
+.profile-details-container {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding-top: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.profile-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.profile-col-md-4 {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Label Styling */
+.form-label {
+    width: 120px;  /* Set a fixed width for labels */
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+/* Value/Input Styling */
+.value, .form-control {
+    flex: 1;
+    min-width: 0;
+    text-align: left;  /* Ensures values align properly */
+    margin-right: 20px;
+}
+
+/* Ensures inputs take full width */
+.form-control {
+    width: 100%;
+}
+
+.profile-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-row {
+        flex-direction: column;
+    }
+
+    .profile-col-md-4 {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .form-label {
+        width: 110px;  /* Reduce width slightly for smaller screens */
+    }
+}

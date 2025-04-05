@@ -1,0 +1,68 @@
+.worker-dashboard-container {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    
+    background-color: rgba(183, 114, 24, 0.204); /* Updated background color */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+  }
+  
+  /* Card Layout */
+  .dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  /* Card Styling */
+  .dashboard-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Hover Effect */
+  .dashboard-card:hover {
+    transform: translateY(-5px);
+    background: #e2e6ea;
+  }
+  
+  /* Count Badge */
+  .card-count {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    background: #a36e29;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+  }
+  
+  /* Tablet View (iPad) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .dashboard-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 767px) {
+    .dashboard-cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
