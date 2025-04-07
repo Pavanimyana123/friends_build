@@ -402,7 +402,7 @@ function Order() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setIsSaving(true);
+    
 
     const storedOrders = JSON.parse(localStorage.getItem("orders")) || [];
     if (storedOrders.length === 0) {
@@ -415,6 +415,7 @@ function Order() {
       alert("Please select a customer with a mobile number or name before submitting.");
       return;
     }
+    setIsSaving(true);
 
     const formData = new FormData();
     // Ensure all orders have the latest customer details before submitting

@@ -206,6 +206,7 @@ const ProfileDetails = () => {
             const updatedData = await response.json();
             setProfile(updatedData);
             setIsEditing(false);
+            alert("✅ Profile details updated successfully");
             fetchProfileDetails();
         } catch (err) {
             alert("❌ " + err.message); // Show error alert if saving fails

@@ -38,7 +38,7 @@ function OTPVerification() {
     try {
       console.log("Verifying OTP for:", { email, otp });
 
-      const response = await axios.post(`${baseURL}/verify-otp`, { email, otp });
+      const response = await axios.post(`${baseURL}/api/verify-otp`, { email, otp });
 
       if (response.status === 200) {
         console.log("OTP verified, proceeding with registration");
@@ -72,7 +72,7 @@ function OTPVerification() {
 
   const handleResendOTP = async () => {
     try {
-      const response = await axios.post(`${baseURL}/send-otp`, { email });
+      const response = await axios.post(`${baseURL}/api/send-otp`, { email });
       if (response.status === 200) {
         setCountdown(60);
         setError("");

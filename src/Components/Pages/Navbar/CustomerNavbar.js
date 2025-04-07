@@ -34,18 +34,18 @@ function VendorNavbar() {
 
 
     return (
-        <header className="navbar-header">
-            <div className="navbar-brand">
+        <header className="customerNavbar-header">
+            <div className="customerNavbar-brand">
                 <img src={logo} alt="Logo" />
             </div>
 
-            <div className={`navbar-hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                <div className="navbar-bar"></div>
-                <div className="navbar-bar"></div>
-                <div className="navbar-bar"></div>
+            <div className={`customerNavbar-hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                <div className="customerNavbar-bar"></div>
+                <div className="customerNavbar-bar"></div>
+                <div className="customerNavbar-bar"></div>
             </div>
 
-            <nav className={`navbar-links ${isOpen ? 'open' : ''}`}>
+            <nav className={`customerNavbar-links ${isOpen ? 'open' : ''}`}>
                 <Link
                     to="/c-dashboard"
                     onClick={handleItemClick}
@@ -71,7 +71,7 @@ function VendorNavbar() {
             </div>
 
             {/* Profile Icon with Dropdown */}
-            <div className="customer-navbar-profile" onClick={toggleProfileDropdown}>
+            <div className="customer-customerNavbar-profile" onClick={toggleProfileDropdown}>
                 <FaUserCircle className="customer-profile-icon" />
                 {profileDropdownOpen && (
                     <div className="customer-profile-dropdown">

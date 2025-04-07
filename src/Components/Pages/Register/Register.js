@@ -130,7 +130,7 @@ function Register() {
     }
   
     try {
-      const otpResponse = await axios.post(`${baseURL}/send-otp`, {
+      const otpResponse = await axios.post(`${baseURL}/api/send-otp`, {
         email: formData.email
       });
   

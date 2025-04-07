@@ -82,14 +82,14 @@
   position: relative;
 }
 
-.register-password-toggle {
+/* .register-password-toggle {
   position: absolute;
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
   color: #666;
-}
+} */
 
 .register-form-actions {
   margin-top: 30px;
